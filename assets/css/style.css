@@ -1,0 +1,19 @@
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+#albumsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.album {
+    width: 150px;
+    text-align: center;
+}
+.album img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
