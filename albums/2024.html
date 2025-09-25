@@ -1,0 +1,14 @@
+---
+layout: default
+title: Albums 2024
+---
+
+<h1>Top 50 Albums of 2024</h1>
+<div class="albums">
+  {% for i in (1..50) %}
+  <div class="album">
+    <img src="https://coverartarchive.org/release/7d166a44-cfb5-4b08-aacb-6863bbe677d6/front" alt="Album {{ i }}">
+    <p>Album {{ i }}</p>
+  </div>
+  {% endfor %}
+</div>

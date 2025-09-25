@@ -1,21 +1,39 @@
 
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background-color: #111;
-  color: #eee;
-}
-.container {
-  max-width: 960px;
-  margin: auto;
-}
-.album-grid {
+.navbar {
+  overflow: hidden;
+  background-color: #333;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+}
+.dropdown {
+  position: relative;
+}
+.dropbtn {
+  background-color: #333;
+  color: white;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 160px;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 .album {
-  width: 150px;
+  display: inline-block;
+  margin: 10px;
   text-align: center;
 }
 .album img {
